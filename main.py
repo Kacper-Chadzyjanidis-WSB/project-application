@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 main = Flask(__name__)
 
 @main.route('/')
-def hello_world():
+def index():
     return 'Hello, World!'
 
 @main.route('/hello', methods=['GET', 'POST'])
