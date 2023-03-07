@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 
 main = Flask(__name__)
 
+
 @main.route('/')
 def index():
     return 'Hello, World!'
@@ -12,6 +13,7 @@ def hello():
         name = request.form['name']
         return f'Hello, {name}!'
     return render_template('index.html')
+
 
 if __name__ == '__main__':
     main.run()
