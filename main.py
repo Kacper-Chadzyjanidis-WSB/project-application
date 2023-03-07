@@ -16,4 +16,4 @@ def hello():
 
 
 if __name__ == "__main__":
-    main.run()
+    main.run(debug=True)
